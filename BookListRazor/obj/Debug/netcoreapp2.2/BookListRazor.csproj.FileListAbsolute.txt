@@ -28,3 +28,4 @@ D:\STUDY\Udemy\ASP.NET CORE MVC 2.2\BookListRazor\BookListRazor\obj\Debug\netcor
 D:\STUDY\Udemy\ASP.NET CORE MVC 2.2\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.dll
 D:\STUDY\Udemy\ASP.NET CORE MVC 2.2\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.pdb
 D:\STUDY\Udemy\ASP.NET CORE MVC 2.2\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\BookListRazor.csproj.CopyComplete
+D:\STUDY\Udemy\ASP.NET CORE MVC 2.2\BookListRazor\BookListRazor\obj\Debug\netcoreapp2.2\Razor\Pages\BookList\Index.g.cshtml.cs
