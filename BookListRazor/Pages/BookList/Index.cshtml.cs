@@ -20,6 +20,9 @@ namespace BookListRazor.Pages.BookList
 
         public IEnumerable<Book> Books { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
+
         public async Task OnGet()
         {
             Books = await _db.Books.ToListAsync();
@@ -34,6 +37,7 @@ namespace BookListRazor.Pages.BookList
             }
             _db.Books.Remove(book);
             await _db.SaveChangesAsync();
+            Message = "Delete successfully!";
             return RedirectToPage("Index");
         }
     }

@@ -20,6 +20,9 @@ namespace BookListRazor.Pages.BookList
         [BindProperty]
         public Book Book { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
+
         public async Task OnGet(int id)
         {
             Book = await _db.Books.Where(b=>b.Id==id).FirstOrDefaultAsync();
@@ -34,6 +37,7 @@ namespace BookListRazor.Pages.BookList
 
             _db.Books.Update(Book);
             await _db.SaveChangesAsync();
+            Message = "Edit successfully!";
             return RedirectToPage("Index");
         }
     }

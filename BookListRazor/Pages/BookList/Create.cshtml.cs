@@ -18,6 +18,10 @@ namespace BookListRazor.Pages.BookList
 
         [BindProperty]
         public Book Book { get; set; }
+
+        [TempData]
+        public string Message { get; set; }
+
         public void OnGet()
         {
 
@@ -32,6 +36,7 @@ namespace BookListRazor.Pages.BookList
 
             _db.Books.Add(Book);
             await _db.SaveChangesAsync();
+            Message = "Create successfully!";
             return RedirectToPage("Index");
         }
     }
